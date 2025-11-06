@@ -1,0 +1,284 @@
+/* style.css */
+
+/* ====== LATAR & TIPOGRAFI ====== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header/Navbar (Gaya E-commerce dengan UNGU) */
+.header {
+    /* WARNA UTAMA: UNGU TERANG */
+    background-color: #E0BBE4; 
+    color: #333; /* Teks header diubah agar kontras dengan latar terang */
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.header .container {
+    display: grid; 
+    grid-template-columns: auto 1fr auto; 
+    gap: 20px;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0 20px;
+    width: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Bagian Logo (Kolom 1) */
+.logo a {
+    color: #333; /* Warna teks logo disesuaikan */
+    font-size: 2.2em;
+    font-weight: 800;
+    display: flex; 
+    align-items: center; 
+}
+
+.header-logo {
+    height: 100px; 
+    margin-right: 10px; 
+    width: auto; 
+}
+
+/* Search Bar (Kolom 2) */
+.search-bar {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.search-bar input {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px; 
+    font-size: 1em;
+}
+
+.search-bar button {
+    /* WARNA SEKUNDER (Ungu Gelap) untuk tombol search */
+    background-color: #957DAD; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 4px 4px 0; 
+    cursor: pointer;
+    margin: 0;
+}
+
+/* Navigasi dan Ikon (Kolom 3) */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+}
+
+/* Gaya Ikon */
+.icon-link {
+    color: #333; /* Warna ikon disesuaikan */
+    margin-left: 15px;
+    font-size: 1.5em; 
+    cursor: pointer;
+}
+
+.icon-link:hover {
+    color: #957DAD; /* Warna hover ungu gelap */
+}
+
+/* Forms and Inputs */
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 16px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button, .btn {
+    /* WARNA TOMBOL PRIMER: UNGU GELAP */
+    background-color: #957DAD; 
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    display: inline-block;
+    text-align: center;
+}
+
+button:hover, .btn:hover {
+    background-color: #79688c; /* Ungu sedikit lebih gelap */
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Card Styles (for dashboard and katalog) */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Modal/Pop-up Styles */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Tracking Progress Bar (Example) */
+.progress-container {
+    margin-top: 15px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 30px;
+    /* Warna progress dipertahankan agar menunjukkan status (hijau) */
+    background-color: #28a745; 
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    transition: width 0.4s ease;
+}
+
+.progress.dikirim {
+    width: 80%;
+    background-color: #ffc107;
+}
+
+.progress.dalam-perjalanan {
+    width: 50%;
+    background-color: #007bff;
+}
+
+.tracking-detail {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.tracking-history ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.tracking-history li {
+    padding: 10px 0;
+    border-bottom: 1px dotted #ddd;
+}

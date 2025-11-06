@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stok & Katalog - Toko Buku Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="stok-page">
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="dashboard.html">
+                    <img src="aset/bookstore_logo.png" alt="BookStore Logo" class="header-logo">
+                    <span>BookStore</span> 
+                </a>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Cari buku...">
+                <button>🔎</button>
+            </div>
+
+            <div class="nav-icons">
+                <a href="stok.html" class="icon-link" title="Katalog">📚</a>
+                <a href="checkout.html" class="icon-link" title="Pemesanan">🛒</a>
+                <a href="tracking.html" class="icon-link" title="Tracking">🚚</a>
+                <a href="#" onclick="handleLogout()" class="icon-link" title="Logout">🚪</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Katalog Buku</h1>
+        <hr>
+
+        <button id="openStokModal" class="btn">Tambah Stok Buku Baru</button>
+
+        <h2>Daftar Buku Tersedia</h2>
+        <div id="katalogList" class="card-grid">
+            <p>Memuat data...</p>
+        </div>
+    </div>
+
+    <div id="stokModal" class="modal">
+        <div class="modal-content">
+            <span id="closeStokModal" class="close-btn">&times;</span>
+            <h3>Tambah Stok Buku Baru</h3>
+            <form id="addStokForm">
+                <label for="new_kodeBarang">Kode Barang</label>
+                <input type="text" id="new_kodeBarang" required>
+
+                <label for="new_namaBarang">Nama Barang</label>
+                <input type="text" id="new_namaBarang" required>
+
+                <label for="new_jenisBarang">Jenis Barang</label>
+                <input type="text" id="new_jenisBarang" value="Buku Ajar" required>
+
+                <label for="new_edisi">Edisi</label>
+                <input type="text" id="new_edisi">
+
+                <label for="new_stok">Stok</label>
+                <input type="number" id="new_stok" min="1" required>
+
+                <label for="new_harga">Harga</label>
+                <input type="text" id="new_harga" placeholder="Contoh: Rp 150.000" required>
+
+                <button type="submit">Simpan Stok Baru</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
