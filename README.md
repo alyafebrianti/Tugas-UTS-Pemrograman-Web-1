@@ -9,13 +9,13 @@
 
 ### 🏪 **Judul Proyek:**
 
-# BookStore — Aplikasi Web Penjualan Buku Sederhana
+# BookStore — Aplikasi Web Penjualan Buku Online
 
 ---
 
 ### 📖 **Deskripsi Proyek**
 
-BookStore adalah **website toko buku sederhana** yang dibuat menggunakan **HTML, CSS, dan JavaScript**.
+BookStore adalah **website toko buku online** yang dibuat menggunakan **HTML, CSS, dan JavaScript**.
 Website ini memiliki fitur:
 
 * Menampilkan daftar buku
