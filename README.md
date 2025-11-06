@@ -53,7 +53,7 @@ Halaman utama untuk menampilkan semua buku yang tersedia di toko.
 Menampilkan gambar, judul, harga, dan tombol **Beli**.
 
 ## Codingan
-```
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -129,7 +129,7 @@ Menampilkan ringkasan keseluruhan dari toko buku, seperti:
   
 # Codingan 
 
-```
+```html
 
 <!DOCTYPE html>
 <html lang="id">
@@ -214,7 +214,7 @@ Total Harga: Rp278.000
 Halaman untuk melihat data stok dan harga buku.
 
 # Codingan
-```
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -314,7 +314,7 @@ Pengguna memilih buku dan jumlah, lalu total harga akan tampil otomatis.
 
 # Codingan
 
-```
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -422,7 +422,7 @@ Halaman untuk melacak status pesanan berdasarkan kode unik.
 
 # Codingan
 
-```
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -514,7 +514,7 @@ header {
 ---
 # Codingan CSS
 
-```
+```css
 /* style.css */
 
 /* ====== LATAR & TIPOGRAFI ====== */
@@ -815,7 +815,7 @@ File ini berfungsi sebagai “database” untuk seluruh halaman.
 
 ---
 # Codingan data.js
-```
+```javascript
 var dataPengguna = [
     {
         id: 1,
@@ -980,7 +980,7 @@ function hitungTotal() {
 ---
 # Codingan script.js
 
-```
+```js
 // script.js
 
 let currentDataPengguna = []; 
