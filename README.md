@@ -5,6 +5,8 @@
 ## Kelas : TI.24.A1
 ## Mata Kuliah : Pemrograman Web 1
 
+## Link YouTube
+https://youtu.be/XyAhkuYwsdM?si=WMOTBQx0z_eomM7i 
 # penjelasan
 
 ### 🏪 **Judul Proyek:**
